@@ -19,3 +19,13 @@
 *.exe
 *.out
 *.app
+
+# VS 2008 project file
+*.vcproj*
+*.sln
+*.ncb
+*.ilk
+*.pdb
+*.suo
+
+/build
