@@ -14,6 +14,8 @@
 
 #include <wx/glcanvas.h>
 
+#include "../RTRay/rtray.h"
+
 namespace rtray
 {
   class render_canvas_t : public wxGLCanvas
@@ -28,6 +30,8 @@ namespace rtray
     DECLARE_EVENT_TABLE();
   private:
     wxGLContext *context_;
+
+    rtray_t rtray_;
   };
 }
 

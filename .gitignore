@@ -21,11 +21,11 @@
 *.app
 
 # VS 2008 project file
-*.vcproj*
-*.sln
+*.vcproj.*
 *.ncb
 *.ilk
 *.pdb
 *.suo
 
 /build
+/resources

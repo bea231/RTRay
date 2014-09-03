@@ -38,14 +38,16 @@ void render_canvas_t::render( wxPaintEvent & event )
   glClearColor(0.f, 0.f, 0.f, 0.f);
   glClear(GL_COLOR_BUFFER_BIT);
 
-  glBegin(GL_QUADS);
+  /*glBegin(GL_QUADS);
     glColor3f(1.f, 0.f, 0.f);
     glVertex2f(-0.5, -0.5);
     glVertex2f(0.5, -0.5);
     glVertex2f(0.5, 0.5);
     glVertex2f(-0.5, 0.5);
-  glEnd();
+  glEnd();*/
 
-  glFlush();
+  rtray_.RenderFrame();
+
+  glFinish();
   SwapBuffers();
 }

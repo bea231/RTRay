@@ -15,7 +15,7 @@ END_EVENT_TABLE()
 render_window_t::render_window_t(const wxString& title, const wxPoint& pos, const wxSize& size )
   : wxFrame(NULL, wxID_ANY, title, pos, size)
 {
-  new render_canvas_t(this);
+  canvas_ = new render_canvas_t(this);
 }
 
 void render_window_t::resized( wxSizeEvent & event )
